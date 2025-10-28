@@ -42,10 +42,13 @@ export default function TicketList() {
           <p>Manage all your support tickets in one place.</p>
         </div>
         <div className="header-actions">
-          <button onClick={() => navigate("/tickets/new")} className="btn btn-primary">
+          <button className="btn btn-primary pad" onClick={() => navigate("/dashboard")}>
+            Back
+          </button>
+          <button onClick={() => navigate("/tickets/new")} className="btn btn-primary pad">
             + Create Ticket
           </button>
-          <button onClick={handleLogout} className="btn btn-logout">
+          <button onClick={handleLogout} className="btn btn-logout pad">
             Logout
           </button>
         </div>
